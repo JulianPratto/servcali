@@ -38,18 +38,40 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                                     <div class="card-body">
-                                        <form action="./LOGINTEST/signup.php" method="POST">
+                                        <form action="./php_operations/signup.php" method="POST">
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputFirstName" name="name" type="text" placeholder="Enter your first name" />
+                                                        <input class="form-control" id="inputFirstName" name="firstname" type="text" placeholder="Enter your first name" />
                                                         <label for="inputFirstName">First name</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating">
-                                                        <input class="form-control" id="inputLastName" name="cedula" type="text" placeholder="Enter your last name" />
+                                                        <input class="form-control" id="inputLastName" name="lastname" type="text" placeholder="Enter your last name" />
                                                         <label for="inputLastName">Last name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputPhone" name="phone" type="text" placeholder="Enter your Phone number" />
+                                                        <label for="inputPhone">Phone</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputLastName" name="weight" type="text" placeholder="Enter your Weight" />
+                                                        <label for="inputWeith">Weight</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputStature" name="stature" type="text" placeholder="Enter your Stature" />
+                                                        <label for="inputWeith">Stature</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -74,25 +96,17 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputAddress" name="Address" type="Address" placeholder="Add Address" />
+                                                        <input class="form-control" id="inputAddress" name="address" type="address" placeholder="Add Address" />
                                                         <label for="inputAddress">Address</label>
                                                     </div>
                                                 </div>
                                                 
-                                                <!--DatePicker-->
-                                    
-                                            <div class="col-md-6">
-                                                
-                                                <div class="input-group date form-floating mb-3 mb-md-0" >
-                                                    <input type="text" id="datepicker" class="form-control" placeholder="Date of birth">
-                                                    <label for="datepicker">DOB</label>
-                                                    <span class="input-group-append">
-                                                        <span class="input-group-text bg-white">
-                                                            <i class="fa fa-calendar"></i>
-                                                        </span>
-                                                    </span>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input type="date" id="datepicker" name="dob" class="form-control" placeholder="Date of birth">
+                                                        <label for="datepicker">DOB</label>
+                                                    </div>
                                                 </div>
-                                                
                                             </div>
                                         </div>
                                             <div class="mt-4 mb-0">
@@ -101,7 +115,7 @@
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="login.html" class="btn btn-dark">Have an account? Go to login</a></div>
+                                        <div class="small"><a href="ViewLogin.php" class="btn btn-dark">Have an account? Go to login</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -125,14 +139,12 @@
                 </footer>
             </div>
         </div>
-        <!--Script del datepicker-->
-        <script type="text/javascript">
-            $ (function(){
-                $('#datepicker').datepicker();
-            });
+      
+
         </script>
         <!--script para importar librerias js-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
+h
