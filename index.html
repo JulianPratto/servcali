@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Healthy Citizen</title>
+    <title>Servcali</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -19,15 +19,17 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Healthy Citizen</a>
+        <a class="navbar-brand ps-3" href="index.html">Servcali</a>
         <!--<a class="navbar-brand ps-3" href="miembros.html">miembros</a>-->
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!--Botones Login y SingUp-->
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0" id="UnloggedIcon">
             <div class="px-xxl-0 d-inline-block bg-info p-3 mb-2 bg-transparent text-dark">
-                <a href="ViewLogin.php" class="btn btn-dark">Log in</a>
-                <a href="register.html" class="btn btn-dark">Sign up</a>
+                <a class="navbar-brand ps-3" href="ViewLogin.php">Inicio</a>
+                <a class="navbar-brand ps-3" href="register.html">Registro</a>
+                <!--//<a href="ViewLogin.php" class="btn btn-dark">Ingreso</a>
+                <a href="register.html" class="btn btn-dark">Registro</a>-->
             </div>
         </ul>
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0" id="LoggedIcon">
@@ -36,11 +38,11 @@
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><p class="dropdown-item" id="MyUserName"></p></li>
                     <li><p class="dropdown-item" id="MyUserRol"></p></li>
-                    <li><a class="dropdown-item" href="./CRUD/my_user.php" id="UpdateMyUser">My User</a></li>
+                    <li><a class="dropdown-item" href="./CRUD/my_user.php" id="UpdateMyUser">Mi usuario</a></li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item" id="LogoutButton" href="">Logout</a></li>
+                    <li><a class="dropdown-item" id="LogoutButton" href="">Salir</a></li>
                 </ul>
             </li>
         </ul>
@@ -50,12 +52,12 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Main</div>
+                        <div class="sb-sidenav-menu-heading">Inicio</div>
                         <a class="nav-link" href="index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
                             Home
                         </a>
-                        <div class="sb-sidenav-menu-heading">Information</div>
+                        <div class="sb-sidenav-menu-heading">Informacion</div>
 
                         <!--Sobre nosotros nav collapsed button-->
                         <a class="nav-link" href="aboutus.html">
@@ -63,12 +65,12 @@
                                 <i class="fas fa-heart">
                                 </i>
                             </div>
-                            About us
+                            Sobre nosotros
                         </a>
                         <!--Pages btn 2 en la lista-->
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-code"></i></div>
-                            Developement
+                            desarrollador
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <!--Herramientas-->
