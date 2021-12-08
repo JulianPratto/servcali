@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Healthy Citizen</title>
+    <title>Servcali</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
@@ -15,46 +15,47 @@
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Healthy Citizen</a>
+        <a class="navbar-brand ps-3" href="index.html">Servcali</a>
+        
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
-                class="fas fa-bars"></i></button>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!--Botones Login y SingUp-->
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0" id="UnloggedIcon">
             <div class="px-xxl-0 d-inline-block bg-info p-3 mb-2 bg-transparent text-dark">
-                <a href="ViewLogin.php" class="btn btn-dark">Log in</a>
-                <a href="register.html" class="btn btn-dark">Sign up</a>
+                <a class="navbar-brand ps-3" href="ViewLogin.php">Inicio</a>
+                <a class="navbar-brand ps-3" href="register.html">Registro</a>
+                <!--//<a href="ViewLogin.php" class="btn btn-dark">Ingreso</a>
+                <a href="register.html" class="btn btn-dark">Registro</a>-->
             </div>
         </ul>
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0" id="LoggedIcon">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><p class="dropdown-item" id="MyUserName"></p></li>
                     <li><p class="dropdown-item" id="MyUserRol"></p></li>
-                    <li><a class="dropdown-item" href="./CRUD/my_user.php" id="UpdateMyUser">My User</a></li>
+                    <li><a class="dropdown-item" href="./CRUD/my_user.php" id="UpdateMyUser">Mi usuario</a></li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item" id="LogoutButton" href="">Logout</a></li>
+                    <li><a class="dropdown-item" id="LogoutButton" href="">Salir</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Main</div>
+                        <div class="sb-sidenav-menu-heading">Inicio</div>
                         <a class="nav-link" href="index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
                             Home
                         </a>
-                        <div class="sb-sidenav-menu-heading">Information</div>
+                        <div class="sb-sidenav-menu-heading">Informacion</div>
 
                         <!--Sobre nosotros nav collapsed button-->
                         <a class="nav-link" href="aboutus.html">
@@ -62,28 +63,23 @@
                                 <i class="fas fa-heart">
                                 </i>
                             </div>
-                            About us
+                            Sobre nosotros
                         </a>
                         <!--Pages btn 2 en la lista-->
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-code"></i></div>
-                            Developement
+                            desarrollador
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <!--Herramientas-->
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                            data-bs-parent="#sidenavAccordion">
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                     <div class="sb-nav-link-icon"><i class="fas fa-wrench"></i></div>
                                     Used Tools
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
-                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
-                                    data-bs-parent="#sidenavAccordionPages">
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                     <nav class="sb-sidenav-menu-nested nav">
                                         <a class="nav-link" href="https://trello.com/b/7dudAdSS/team-haba">Trello</a>
                                         <a class="nav-link" href="https://github.com/Alemax12/HABBA-TEAM">GitHub</a>
@@ -102,12 +98,12 @@
                                 <!--Registros-->
                                 <a class="nav-link" id="TablesLeft" href="./CRUD/registros.php">
                                     <div class="sb-nav-link-icon">
-                                        <i class="fas fa-bars">
-                                        </i>
+                                    <i class="fas fa-bars">    
+                                    </i>
                                     </div>
                                     Tables
                                 </a>
-
+                                
                             </nav>
                         </div>
                         <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -117,31 +113,22 @@
             <main>
                 <div class="container-fluid px-4">
                     <div class="jumbotron">
-                        <h1 class="display-4">About Us</h1>
-                        <p class="lead">We are a company that contributes to the comprehensive development of
-                            associated with the cooperative as well as other users and clients, providing services in
-                            three sectors:
-                            protection
-                            financial
-                            Health
-
-                            With them we facilitate the well-being and progress of more than four million people whom we
-                            serve through
-                            the commitment to the health of our patients.</p>
+                        <h1 class="display-4">Sobre nosotros</h1>
+                        <p class="lead">Somos una empresa gestora de redes, soporte, instalaciones de informatica y seguridad informatica qualified
+                            brindamos servicios para generar conectividad con lso caleños, pueden preguntar pos nuestros precios al ver una gran
+                            necesidad ante la servicialidad y el compromiso con la seguridad de la informacion en la caleñidad servcali se ha conformado
+                            para brindar servicios con compromiso y claridad a sus clientes y en generar a todas las personas que deseen saber de nuestra
+                            empresa.</p>
                         <hr class="my-4">
-                        <h1 class="display-4">Mission</h1>
-                        <p class="lead">Protect the health of our members, prioritizing the promotion of self-care and
-                            adequate
-                            management of the risks of the disease, in order to provide excellence in service in a
-                            sustainable way,
-                            through a committed and qualified human team.</p>
+                        <h1 class="display-4">Mision</h1>
+                        <p class="lead">Gestionar servicios de calidad a nuestros clientes, seguros, rapidos y confiables
+                            deseamos ser la empresa pionera en desarrollo informatico y gestion de mineria en el valle del cauca.
+                        </p>
                         <hr class="my-4">
                         <h1 class="display-4">Vision</h1>
-                        <p class="lead">Reach to be the EPS with the highest recognition in Colombia, for ensuring
-                            comprehensive health
-                            care for its affiliates, under a people-centered model, which is reflected in a high level
-                            of satisfaction
-                            in the service.</p>
+                        <p class="lead">Para el 2025 esperamos ser una empresa con una imagen, personal y proyeccion con quien las personas puedan contar
+                            para sus proyectos y seguridad empresarial.
+                        </p>
 
                     </div>
                 </div>
@@ -149,7 +136,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Healthy Citizen 2021</div>
+                        <div class="text-muted">Copyright &copy; Servcali 2021</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;
